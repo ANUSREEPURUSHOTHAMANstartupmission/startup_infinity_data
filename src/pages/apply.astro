@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Apply from "../components/Apply.svelte";
+---
+
+
+<Layout title="Kerala Startup Mission">
+
+  <section class="py-20 px-5">
+		<div class="container mx-auto">
+      
+      <div class="text-4xl font-bold font-josefin text-center mb-5 text-[#f77e46]">Apply Now</div>
+      
+      
+      <Apply client:load></Apply>
+
+    </div>
+  </section>
+
+</Layout>

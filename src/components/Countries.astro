@@ -1,0 +1,244 @@
+<section id="roadshow">
+
+  <div class="tl-item">
+
+    <div class="tl-bg" style="background-image: url(./img/dubai.jpg)"></div>
+
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif font-raleway">Dubai</p>
+    </div>
+
+    <div class="tl-content flex">
+      <!-- <h1>Launching On</h1>
+      <a class="lightbox" href="./assets/img/slt/roadshow/poster-blr.jpg">
+        <img src="./assets/img/slt/roadshow/poster-blrl-thumb.jpg">
+      </a>
+      <p class="pt-2"></p> -->
+      <a href="dubai" class="bg-red-500 text-white px-5 py-2 flex text-center mx-auto w-fit">
+				Know More
+			</a>
+		<a href="/apply" class="bg-red-500 text-white px-5 py-2 flex text-center mx-auto items-center justify-center w-fit">
+				 Apply Now
+		</a>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+
+    <div class="tl-bg" style="background-image: url(./img/usa.jpg)"></div>
+
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif font-raleway">USA</p>
+    </div>
+
+    <!-- <div class="tl-content">
+      <h1>24<sup>th</sup> June 2019 | 3pm-5pm</h1>
+      <a class="lightbox" href="./assets/img/slt/roadshow/poster-del.jpg">
+        <img src="./assets/img/slt/roadshow/poster-del-thumb.jpg">
+      </a>
+      <p class="pt-2">Partner: IAMAI</p>
+      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSehOz0iTx7uTwUKZcm0aERpGXcb5ONbw_jPvvCgG2IFjkNPHQ/viewform?vc=0&amp;c=0&amp;w=1" class="btn btn-success">register</a>
+    </div> -->
+
+  </div>
+
+  <div class="tl-item">
+
+    <div class="tl-bg" style="background-image: url(./img/germany.jpg)"></div>
+
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif font-raleway">Europe</p>
+    </div>
+
+    <!-- <div class="tl-content">
+      <h1>26<sup>th</sup> June 2019 | 4pm-6pm</h1>
+      <a class="lightbox" href="./assets/img/slt/roadshow/poster-mum.jpg">
+        <img src="./assets/img/slt/roadshow/poster-mum-thumb.jpg">
+      </a>
+      <p class="pt-2">Partner: ZONE Startups</p>
+      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSehOz0iTx7uTwUKZcm0aERpGXcb5ONbw_jPvvCgG2IFjkNPHQ/viewform?vc=0&amp;c=0&amp;w=1" class="btn btn-success">register</a>
+    </div> -->
+
+  </div>
+
+  <div class="tl-item">
+
+    <div class="tl-bg" style="background-image: url(./img/australia.jpg)"></div>
+
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif font-raleway">Australia</p>
+    </div>
+
+    <!-- <div class="tl-content">
+      <h1>28<sup>th</sup> June 2019 | 3pm-5pm</h1>
+      <a class="lightbox" href="./assets/img/slt/roadshow/poster-hyd.jpg">
+        <img src="./assets/img/slt/roadshow/poster-hyd-thumb.jpg">
+      </a>
+      <p class="pt-2">Partner: WeHub</p>
+      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSehOz0iTx7uTwUKZcm0aERpGXcb5ONbw_jPvvCgG2IFjkNPHQ/viewform?vc=0&amp;c=0&amp;w=1" class="btn btn-success">register</a>
+    </div> -->
+
+  </div>
+
+
+</section>
+
+<style>
+	#roadshow {
+		display: flex;
+		background-color: #031625;
+	}
+	
+	#roadshow:hover .tl-item {
+		width: 23.3333%;
+	}
+
+	.tl-item {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		position: relative;
+		width: 25%;
+		height: 50vh;
+		min-height: 600px;
+		color: #fff;
+		overflow: hidden;
+		transition: width 0.5s ease;
+	}
+
+	.tl-item:before,
+	.tl-item:after {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.tl-item:after {
+		/* background: rgba(3, 22, 37, 0.85); */
+		opacity: 1;
+		transition: opacity 0.5s ease;
+	}
+
+	.tl-item:before {
+		/* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 95%); */
+		z-index: 1;
+		opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0) translateY(50%);
+		transform: translate3d(0, 0, 0) translateY(50%);
+		transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+		transition: opacity 0.5s ease, transform 0.5s ease;
+		transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+	}
+
+	.tl-item:hover {
+		width: 30% !important;
+	}
+
+	.tl-item:hover:after {
+		opacity: 0;
+	}
+
+	.tl-item:hover:before {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0) translateY(0);
+		transform: translate3d(0, 0, 0) translateY(0);
+		transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
+		transition: opacity 1s ease, transform 1s ease 0.25s;
+		transition: opacity 1s ease, transform 1s ease 0.25s, -webkit-transform 1s ease 0.25s;
+	}
+
+	/* .tl-item:hover .tl-content {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		transition: all 0.75s ease 0.5s;
+	} */
+
+	.tl-item:hover .tl-bg {
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0);
+	}
+
+	.tl-item:hover .tl-year {
+		top: 20%;
+		transition: all 0.75s ease;
+	}
+
+	.tl-content {
+		-webkit-transform: translate3d(0, 0, 0) translateY(25px);
+		transform: translate3d(0, 0, 0) translateY(25px);
+		position: relative;
+		z-index: 1;
+		text-align: center;
+		margin: 0 1.618em;
+		top: 60%;
+		/* opacity: 0; */
+	}
+
+	.tl-content h1 {
+		font-family: 'Calibri';
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 1.4rem;
+		font-weight: normal;
+	}
+
+	.tl-year {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+		z-index: 1;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		padding: 8px 0;
+	}
+
+	.tl-year p {
+		font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-size: 1.728rem;
+		color: white;
+	}
+
+	.tl-bg {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-size: cover;
+		background-position: center center;
+		transition: -webkit-filter 0.5s ease;
+		transition: filter 0.5s ease;
+		transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+		/* -webkit-filter: grayscale(100%); */
+		/* filter: grayscale(100%); */
+	}
+
+	@media only screen and (max-width: 800px) {
+		#roadshow {
+			flex-direction: column;
+		}
+
+		#roadshow:hover .tl-item {
+			width: 100%;
+		}
+
+		.tl-item {
+			width: 100%;
+			height: 25vh;
+		}
+
+		.tl-item:hover {
+			width: 100% !important;
+		}
+	}
+</style>

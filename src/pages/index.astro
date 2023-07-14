@@ -1,0 +1,192 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from '../components/Countdown.svelte';
+import Speakers from '../components/Speakers.svelte';
+import Footer from '../components/Footer.astro';
+import Countries from '../components/Countries.astro';
+---
+
+<Layout  title="Kerala Startup Mission">
+	<main class="relative py-10 px-10 min-h-[40vh] md:min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center" >
+		<div class="absolute -z-10 w-full h-full top-0 left-0 gradient"></div>
+		<div class="absolute -z-10 w-full h-full top-0 left-0 bg-black bg-opacity-0"></div>
+  	<div class="absolute -z-20 bg-cover bg-center bg-no-repeat w-full h-full top-0 left-0" style="background-image:url('/img/bg-map.gif')"></div>  
+
+		<div class="mx-auto text-white text-center border-[12px] flex flex-col  justify-center border-white w-full md:min-h-[75vh] p-5 py-24 shadow-md">
+
+			<div class="flex flex-col md:w-1/2">
+				<h1 class=" text-4xl md:text-6xl font-bold font-josefin header-text">Startup Infinity</h1>
+				<div class="md:text-2xl font-raleway header-text">From Kerala to the World</div>
+
+				<div class="inline-block overflow-hidden pt-6">
+					<div class="animate-marquee">
+
+						<a class="inline-block px-4 py-1  text-white italic bg-red-900 bg-opacity-80  md:text-lg text-sm" href="/apply">Applications are invited for startup infinity dubai Apply Now !</a>
+					</div>
+				</div>
+			</div>
+			
+
+				<!-- <div class="inline-block overflow-hidden absolute inset-x-0 bottom-0">
+					<div class="animate-marquee">
+					<a class="inline-block px-4 py-2 text-xl text-white font-bold" href="/apply">Applications are invited for startup infinity dubai</a>
+					</div>
+				</div> -->
+		</div>
+		
+	</main>
+
+	<section class="py-24 px-5">
+		<div class="container mx-auto">
+			<div class="text-4xl font-bold font-josefin mb-4 text-[#f77e46]">About</div>
+			<div class="text-justify text-gray-500 font-raleway leading-relaxed text-xl">
+				<div class="mb-3">
+					Startup Infinity is an Initiative by Kerala Startup Mission to support the NRI community to set up business in Kerala and to tap into their vast amount of resources to support startups.The state government's  Startup Infinity programme aims to unite the NRI population and encourage them to launch their own businesses both abroad and in Kerala. This will act as a global desk in different countries where the NRI community can engage,co create and set up their businesses in their resident country or in India. The support to register their company in their resident town shall be facilitated by Kerala Startup Mission.
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<Countries />
+
+	<section class="py-24 px-5">
+		<div class="container mx-auto">
+
+			<div class="text-4xl font-bold font-josefin text-center mb-6 text-[#f77e46]">Objectives</div>
+
+			<ol class=" gap-5 flex flex-wrap justify-center text-justify text-gray-500 font-raleway leading-relaxed mb-24">
+
+				<li class="shadow-lg w-full md:w-1/4 p-5 mb-2 border-b-4 border-yellow-600">
+					<div class="flex justify-center mb-3">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-orange-400">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+						</svg>
+
+					</div>
+					
+					Help Kerala based startups explore the overseas market.
+				</li>
+				<li class="shadow-lg w-full md:w-1/4 p-5 mb-2 border-b-4 border-yellow-600">
+					<div class="flex justify-center mb-3">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-orange-400">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+						</svg>
+
+					</div>
+
+					Make Kerala a key point of access for overseas startups to explore the Indian market.
+				</li>
+				<li class="shadow-lg w-full md:w-1/4 p-5 mb-2 border-b-4 border-yellow-600">
+					<div class="flex justify-center mb-3">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-orange-400">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+						</svg>
+
+					</div>
+
+					Establish an engagement and co-creation space where founders from Kerala and the NRI community
+				</li>
+				<li class="shadow-lg w-full md:w-1/4 p-5 mb-2 border-b-4 border-yellow-600">
+					<div class="flex justify-center mb-3">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-orange-400">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+						</svg>
+
+					</div>
+
+					Create NRI angel networks to support the Kerala startup ecosystem.
+				</li>
+				<li class="shadow-lg w-full md:w-1/4 p-5 mb-2 border-b-4 border-yellow-600">
+					<div class="flex justify-center mb-3">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-orange-400">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+						</svg>
+
+					</div>
+
+					Increase the quantum of funding and investment into IT projects in the State.
+				</li>
+				
+			</ol>
+
+			<div class="text-4xl font-bold font-josefin mb-6 text-[#f77e46]">SI Desk</div>
+
+			<div class="text-justify text-gray-500 font-raleway leading-relaxed text-xl mb-10">
+				<div class="mb-3">The SI Desk will be having all support systems which help the NRIs to register a company and make use of the tech talent from Kerala, finding a co-founder, becoming a strategic partner to the startups and all necessary support to start their enterprise. Startup Infinity will also focus on providing startups from Kerala to  expand their  foothold abroad by providing various market access opportunities . </div>
+				<div class="mb-3">The Plug and Play facility available in the Startups Infinity desk can be accessed by NRIs’ and Startups.There will be a registration process for the same. The procedure will include all the steps  required by any startups from the country to set up or expand their business.</div>
+				<div class="mb-3">Similar to KSUM’S activities, the SI desk will also become an avenue for  frequent Investor connect programmes and business workshops, making it a vibrant space for all stakeholders.Startup Middle East one of the partners shall facilitate the activities in the GCC countries.</div>
+				<div class="mb-3">Startups from across the world can come to Kerala and explore the Indian market with three months of free space provided.</div>
+			</div>
+
+			<div class="text-center">
+				<a href="/apply" class="px-8 py-3 bg-[#f77e46] text-white rounded-full shadow-md">Apply Now</a>
+			</div>
+
+			<div class="text-4xl text-center font-bold font-josefin mb-4 text-[#f77e46] mt-24">Partner</div>
+
+			<div class=" mb-10 mx-auto items-center justify-center">
+				<div class="">
+					<img src="/img/(BLUE) SME Logo.png" class="mb-3 w-1/2 md:w-1/6 items-center justify-center mx-auto shadow-xl p-5">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<Footer></Footer>
+
+</Layout>
+
+<style lang="scss">
+	.gradient{
+		background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(255,255,255,0) 50%);
+	}
+
+	.header-text{
+		text-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+	}
+
+	ol.counter{
+		list-style: none;
+  	counter-reset: my-awesome-counter;
+
+		li{
+			counter-increment: my-awesome-counter;
+			position: relative;
+			border-bottom: 2px solid #f77e46;
+
+			&::before{
+				font-family: sans-serif;
+				content: counter(my-awesome-counter);
+				position: absolute;
+				top: 0;
+				left: -15px;
+				background: #f77e46;
+				// padding: 2px 5px;
+				border-radius: 100%;
+				color:white;
+				font-weight: bold;
+				text-align: center;
+				width: 30px;
+				height: 30px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+			}
+		}
+	}
+
+	@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+</style>
